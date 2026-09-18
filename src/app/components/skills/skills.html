@@ -1,0 +1,6 @@
+<section id="skills" class="section skills">
+  <div class="container">
+    <div class="section-heading reveal"><span class="eyebrow">03 / SKILLS</span><h2>Tools & expertise<span class="period">.</span></h2><p>The core tools and technologies in my web development toolkit.</p></div>
+    <div class="skills-layout"><div class="skills-intro reveal"><span class="outline-label">TOOLKIT / 06 TOOLS</span><div class="skills-statement">The tools behind<br><em>the work.</em></div><div class="skills-divider"></div><p>Frameworks, languages, and workflow tools for building modern web experiences.</p><span class="skills-symbol" aria-hidden="true">✳</span></div><div class="skills-grid">@for (tool of tools; track tool.name; let i = $index) { <div class="skill-card reveal"><div class="skill-icon" aria-hidden="true"><img [src]="tool.icon" alt="" width="31" height="31">@if (tool.secondaryIcon) { <img class="secondary-icon" [src]="tool.secondaryIcon" alt="" width="18" height="18"> }</div><div class="skill-info"><span class="skill-name">{{ tool.name }}</span><span class="outline-label">{{ tool.category }}</span></div><span class="skill-index">0{{ i + 1 }}</span></div> }</div></div>
+  </div>
+</section>

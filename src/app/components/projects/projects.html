@@ -1,0 +1,11 @@
+<section id="projects" class="section projects">
+  <div class="container">
+    <div class="projects-heading reveal"><div class="section-heading"><span class="eyebrow">02 / PROJECTS</span><h2>Selected work<span class="period">.</span></h2><p>Showcase the things you have built. Replace these templates with your projects when you are ready.</p></div><span class="heading-aside">A COLLECTION IN PROGRESS <span aria-hidden="true">↘</span></span></div>
+    <div class="project-grid">
+      @for (card of cards; track card) {
+        <article class="project-card reveal"><div class="project-image"><div class="image-grid" aria-hidden="true"></div><span class="image-number">0{{ card }}</span><span class="image-placeholder"><span aria-hidden="true">◇</span> PROJECT IMAGE</span><span class="image-corner" aria-hidden="true">↗</span></div><div class="project-body"><div class="project-topline"><span class="outline-label">PROJECT 0{{ card }}</span><span class="project-rule"></span></div><h3>Project title</h3><p>Brief project description goes here.</p><div class="tag-row"><span>TECH</span><span>TECH</span><span>TECH</span></div><div class="project-actions"><button class="project-action" type="button" disabled title="Add a GitHub link to enable">GitHub <span aria-hidden="true">↗</span></button><button class="project-action" type="button" disabled title="Add a demo link to enable">Live Demo <span aria-hidden="true">↗</span></button></div></div></article>
+      }
+    </div>
+    <div class="project-note reveal"><span>✳</span> More room for your future work</div>
+  </div>
+</section>

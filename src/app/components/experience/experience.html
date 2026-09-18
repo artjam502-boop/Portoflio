@@ -1,0 +1,13 @@
+<section id="experience" class="section experience">
+  <div class="container">
+    <div class="section-heading reveal"><span class="eyebrow">04 / EXPERIENCE</span><h2>Experience & practice<span class="period">.</span></h2><p>Areas I work across when building web applications.</p></div>
+    <div class="experience-layout">
+      <div class="experience-aside reveal"><span class="outline-label">DEVELOPMENT / PRACTICE</span><div class="aside-mark" aria-hidden="true">↗</div><p>From interface design to connected applications.</p></div>
+      <div class="experience-grid">
+        @for (entry of entries; track entry.title; let i = $index) {
+          <article class="experience-card reveal"><div class="experience-meta"><span>AREA 0{{ i + 1 }}</span><span aria-hidden="true">↗</span></div><h3>{{ entry.title }}</h3><p>{{ entry.description }}</p></article>
+        }
+      </div>
+    </div>
+  </div>
+</section>

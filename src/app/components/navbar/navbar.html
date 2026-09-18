@@ -1,0 +1,12 @@
+<header class="nav" [class.scrolled]="scrolled()" [class.open]="menuOpen()">
+  <div class="container nav-inner">
+    <a class="brand" href="#home" (click)="closeMenu()" aria-label="Craig Lawrence Rayo, portfolio home"><span class="brand-mark">&lt;/&gt;</span><span>Craig Lawrence Rayo<span class="brand-dot">.</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation" id="main-nav">
+      @for (link of links; track link.id) {
+        <a [href]="'#' + link.id" [class.active]="active() === link.id" [attr.aria-current]="active() === link.id ? 'location' : null" (click)="closeMenu()">{{ link.label }}</a>
+      }
+    </nav>
+    <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" [attr.aria-expanded]="menuOpen()" aria-controls="main-nav" [attr.aria-label]="menuOpen() ? 'Close menu' : 'Open menu'" (click)="toggleMenu()"><span></span><span></span></button>
+  </div>
+</header>

@@ -1,6 +1,6 @@
 <header class="nav" [class.scrolled]="scrolled()" [class.open]="menuOpen()">
   <div class="container nav-inner">
-    <a class="brand" href="#home" (click)="closeMenu()" aria-label="Craig Lawrence Rayo, portfolio home"><span class="brand-mark">&lt;/&gt;</span><span>Craig Lawrence Rayo<span class="brand-dot">.</span></span></a>
+    <a class="brand" href="#home" (click)="closeMenu()" aria-label="Craig Lawrenz Rayo, portfolio home"><span class="brand-mark">&lt;/&gt;</span><span>Craig Lawrenz Rayo<span class="brand-dot">.</span></span></a>
     <nav class="nav-links" aria-label="Main navigation" id="main-nav">
       @for (link of links; track link.id) {
         <a [href]="'#' + link.id" [class.active]="active() === link.id" [attr.aria-current]="active() === link.id ? 'location' : null" (click)="closeMenu()">{{ link.label }}</a>
